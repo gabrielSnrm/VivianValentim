@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+@font-face {
+    font-family: Vtks Lettering;
+    src: url(fontes/BrownSugar.ttf);
+}
+
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url(../fontes/brown-sugar/BrownSugar.ttf);
+}
+
+@font-face {
+    font-family: 'Extenda';
+    src: url(../fontes/extenda/Extenda-80-Peta-trial.ttf);
+}
+
+/*--------------------------------------------CONFIGURAÇÕES GERAIS---------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /*background: linear-gradient(81deg, rgba(206,210,221,1) 0%, rgba(217,224,230,1) 100%);*/
+    font-family: Montserrat, sans-serif;
+    padding: 0px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/*----------------------------------------FIM DAS CONFIGURAÇÕES GERAIS------------------------------------------------*/
+
+/*--------------------------------------------DEIXANDO O SITE RESPONSIVO----------------------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+
+main.original {
+        display: none;
+}
+
+main.responsivo {
+    margin-bottom: 20%;
+    display: block;
+    justify-content: center;
+    padding: 0px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header.logo {
+    width: 600px;
+    height: 60%;
+}
+
+.informacoes-pessoais1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+.resumo1 {
+    width: 95%;
+    color: white;
+}
+
+.imagem-vivian1  img{
+    border-radius: 10px;
+     /*box-shadow: 0px 50px 50px -4px  rgba(0, 0, 0, 0.219);*/
+    animation: moveToLeft 1s ease-in-out;
+    animation-delay: 1000ms;
+     width: 70%;
+     height: 95%;
+}
+
+.tira-duvidas1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tira-duvidas-formulario1 {
+    width: 95%;
+    text-align: justify;
+    color: white;
+}
+
+section.procedimentos1 {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    background: rgb(249,220,137);
+    background: linear-gradient(90deg, rgba(249,220,137,1) 0%, rgba(255,250,183,1) 35%, rgba(211,169,95,1) 100%);   
+    /*background: linear-gradient(to right, rgba(243, 240, 240, 0.685) 30%, rgb(251, 251, 252) 100%);*/
+    /*background-color: #7978741f;*/
+    font-family: 'Six Caps', sans-serif;
+    font-size: 100px;
+} 
+
+.procedimentos1 > p {
+    font-size: 50%;
+    color: white;
+    
+} 
+
+section.especialidades1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    border-bottom: 3px solid black;
+}
+
+.lote1-1 {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.lote1-1 > img {
+    width: 100%;
+    animation: moveRight 1s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+.liplift-pro1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.proc-lip1:hover {
+    transform: rotateY(180deg);
+}
+
+.proc-lip1 {
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    width: 50%;
+}
+.proc-lip1 > img {
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+
+.txt-lip {
+    width: 50%;
+    margin-left: 5%;
+}
+
+/*------------------------------------FAQ RESPONSIVO------------------------------------*/
+.hide {
+    display: none;
+}
+
+
+.perguntas1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.perguntas1 h2 {
+    text-align: justify;
+    width: 86%;
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+}
+
+#resposta-01-1 {
+    display: none;
+    text-align: justify;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#pergunta-01-1 {
+    text-align: justify;
+    width: 95%;
+    color: white;
+}
+
+#pergunta-01-btn-1{
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+#pergunta-02-btn-1{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+#pergunta-02-1 {
+    text-align: justify;
+    color: white;
+    width: 95%;
+}
+
+#resposta-02-1 {
+    display: none;
+    text-align: justify;
+    width: 100%;
+    margin-top: 15px;
+    color: white; 
+}
+
+form > input {
+    border-radius: 4px;
+    margin: 3px 3px 15px 3px;
+    width: 103%;
+    padding: 10px;
+    box-shadow: 10px solid rgba(0, 0, 0, 0.342);
+    border: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+.call {
+    text-decoration: none;
+    border: 20px;
+    padding: 10px;
+    background-color: #36271C;
+    border-radius: 15px;
+    margin-left: 30%;
+    color: white;
+    text-align: center;
+}
+
+div.tt-form {
+    padding: 6px;
+    
+}
+
+.foto-formulario1 {
+    width: 100%;
+}
+
+.foot {
+    display: none;
+}
+
+.ft-res {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+}
+@media only screen and (min-width: 481px) { 
+    main.original {
+        display: block;
+}
+
+main.responsivo {
+    display: none;
+}
+
+
+    
+}
+/*----------------------------------------------FIM DO SITE RESPONSIVO------------------------------------------------*/
+
+
+
+/*--------------------------------------------CONFIGURAÇÕES HEADER----------------------------------------------------*/
+header {
+    text-align: justify;
+}
+
+.logo {
+    width: 10%;
+    margin-left: 10%;
+}
+/*----------------------------------------FIM DAS CONFIGURAÇÕES HEADER------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------RESUMO VIVIAN--------------------------------------------------------*/
+
+@keyframes moveToLeft {
+    from {
+      transform: translateX(300px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes moveToRigth {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateY(300px);
+    }
+  }
+
+.informacoes-pessoais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(360, rgba(0, 0, 0, 0.979) 0%, rgba(0, 0, 0, 0.979) 100%); 
+}
+
+.resumo {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10%;
+    width: 50%;
+    margin-top: 150px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imagem-vivian {
+    width: 50%;
+    animation: moveToLeft 1s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+.imagem-vivian > img {
+    border-radius: 10px;
+     /*box-shadow: 0px 50px 50px -4px  rgba(0, 0, 0, 0.219);*/
+    /* animation: moveToLeft 1s ease-in-out;
+    animation-delay: 1000ms;*/
+     width: 80%;
+     height:auto;
+}
+
+/*---------------------------------------------FIM DO RESUMO VIVIAN--------------------------------------------------*/
+
+/*-----------------------------------------------PROCEDIMENTOS---------------------------------------------------------*/
+.procedimentos {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    background: rgb(249,220,137);
+    background: linear-gradient(90deg, rgba(249,220,137,1) 0%, rgba(255,250,183,1) 35%, rgba(211,169,95,1) 100%);   
+    /*background: linear-gradient(to right, rgba(243, 240, 240, 0.685) 30%, rgb(251, 251, 252) 100%);*/
+    /*background-color: #7978741f;*/
+    font-family: 'Six Caps', sans-serif;
+    font-size: 100px;
+}
+
+div.procedimento-lipfift > p {
+    margin-top: 30px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2em;
+}
+
+div.procedimento-lipfift {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.procedimentos h2 {
+    /*background: linear-gradient(45deg, rgba(1, 13, 13, 0.322) 0%, rgba(253, 187, 45, 0.466) 100%); */
+    /*border-top: 2px solid black; 
+    border-bottom: 2px solid black;  */ 
+    width: 60%;    
+    height: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    font-size: 50px;
+    align-items: center;
+
+}
+/*-----------------------------------------------FIM DOS PROCEDIMENTOS-------------------------------------------------*/
+
+/*------------------------------------------------TITULO ESPECIALIDADES------------------------------------------------*/
+.tt-especialidades {
+    display: flex;
+    width: 73%;
+    justify-content: space-around;
+    margin: 2% 12% 2% 12%;
+}
+
+.tt-especialidades h2 {
+    font-size: 15px;
+}
+/*-----------------------------------------------FIM TITULO ESPECIALIDADES--------------------------------------------*/
+
+/*-----------------------------------------------ESPECIALIDADES--------------------------------------------------------*/
+.tt-servicos {
+    color: #FCE259; 
+    font-family: 'Brown Sugar'; 
+    padding: 30px; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+
+.especialidades { 
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    flex-wrap: wrap;
+    row-gap: 30%;
+    margin: 2% 12% 2% 12%;
+    padding-bottom: 50px;
+    border-bottom: 3px solid black;
+}
+
+.lote1 {
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin-top: 10%;
+    width: 30%;
+    height: 450px;
+    transition: all 0.3s ease-out;
+    background: linear-gradient(45deg, rgba(1, 13, 13, 0.322) 0%, rgba(253, 187, 45, 0.466) 100%); 
+    border-top-left-radius: 60px;
+    /*border-left: 3px solid #36271C;*/
+  }
+  
+
+  .lote2 {
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin-top: 50px;
+    width: 27%;
+    height: 60px;
+    transition: all 0.3s ease-out;
+    background: linear-gradient(45deg, rgba(253, 187, 45, 0.466) 0%, rgba(0, 0, 0, 0.788) 100%); 
+    border-top-left-radius: 10px;
+    margin-right: 10%;
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    /*border-left: 3px solid #36271C;*/
+  }
+
+  .lote2 p {
+    padding: 15px;
+}
+
+.lote2:hover {
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    width: 50%;
+}
+ 
+/*-----------------------------------------------FIM ESPECIALIDADES-----------------------------------------------------*/
+
+/*-----------------------------------------------MÉTODO LIPLIFT PRINCIPAL-----------------------------------------------*/
+@keyframes changeBackgroundColor {
+    0% {
+    background-image: url(./images/lip-02.JPG);
+    }
+    50% {
+    background-image: url(../images/lip-01.JPG);
+    }
+    100% {
+      background-color: #001F3F;
+    }
+  }
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
+
+
+.slide-show{
+  overflow: hidden;
+}
+
+.slides-list{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+  
+.liplift-pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;  
+    padding: 50px;
+    width: 90%;
+}   
+
+.proc-lip {
+    width: 50%;
+    padding: 0px;
+    text-align: center;
+}
+
+.proc-lip img {
+    padding: 0px;
+    width: 500px;
+   height: 500px;
+   border-radius: 5px;
+}
+
+/*.proc-lip:hover {
+    transform: rotateY(180deg);
+}
+
+.proc-lip {
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    width: 50%;
+}
+.proc-lip > img {
+    width: 80%;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+*/
+.txt-lip {
+    text-align: justify;
+    width: 40%;
+}
+
+/*------------------------------------------FIM DO MÉTODO LIPLIFT PRINCIPAL---------------------------------------------*/
+
+/*--------------------------------------------FORMULÁRIO TIRA DUVIDAS---------------------------------------------------*/
+.tira-duvidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.979) 0%, rgba(235, 187, 82, 0.712) 110%); 
+}
+
+
+.tira-duvidas-formulario {
+    width: 50%;
+    text-align: justify;
+    margin-top: 10%;
+}
+
+form > input {
+    border-radius: 4px;
+    margin: 3px 3px 15px 3px;
+    width: 93%;
+    padding: 15px;
+    box-shadow: 10px solid rgba(0, 0, 0, 0.342);
+    border: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.call {
+    text-decoration: none;
+    border: 20px;
+    padding: 10px;
+    background-color: #FCE259;
+    border-radius: 15px;
+    margin-left: 30%;
+    color: black;
+   
+    box-shadow: 7px 7px 13px 0px rgba(156, 133, 133, 0.817);
+}
+
+.call a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.foto-formulario {
+    width: 120%;
+    margin-left: -20px;
+}
+/*--------------------------------------FIM DO FORMULÁRIO TIRA DUVIDAS---------------------------------------------------*/
+
+/*------------------------------------------------PERGUNTAS--------------------------------------------------------------*/
+.hide {
+    display: none;
+    
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+    width: 65%;
+    margin-top: 30px;
+    margin-left: 16%;
+    margin-right: 15%;
+    
+}
+
+.perguntas span {
+    width: 65%;
+}
+
+.perguntas h2 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+#resposta-01 {
+    display: none;
+    text-align: justify;
+    width: 100%;
+    padding: 15px;
+    color: white;
+}
+
+#pergunta-01 {
+    text-align: justify;
+    width: 100%;
+    color: white;
+}
+
+#pergunta-01-btn{
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+#pergunta-02-btn{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+#pergunta-02 {
+    text-align: justify;
+    color: white;
+}
+
+#resposta-02 {
+    display: none;
+    display: none;
+    text-align: justify;
+    width: 100%;
+    padding: 15px;
+    color: white;
+}
+/*----------------------------------------------FIM DAS PERGUNTAS--------------------------------------------------------*/
+
+/*-----------------------------------------------------FOOTER------------------------------------------------------------*/
+.foot {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    height: 30px;   
+    background: black;
+}
+
+
+/*
+li{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: lower-alpha;
+    background-color: #CCA36B;
+}*/
+/*-----------------------------------------------FIM DO FOOTER-----------------------------------------------------------*/

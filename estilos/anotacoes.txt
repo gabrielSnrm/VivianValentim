@@ -1,0 +1,19 @@
+/* IMAGEM FLOAT
+@keyframes float{
+	0%,80%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-30px)
+	}
+}*/
+
+/* 
+@keyframes moveToRigth {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(300px);
+    }
+  }*/
